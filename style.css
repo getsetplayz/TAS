@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #101010,
+            #1b1b1b
+        );
+
+    color: white;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+}
+
+
+.app {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+
+header {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+header h1 {
+
+    font-size: 48px;
+
+    margin: 0;
+
+    font-weight: 800;
+
+}
+
+
+header p {
+
+    margin: 3px 0;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    opacity: .7;
+
+}
+
+
+.location {
+
+    background: #202020;
+
+    border-radius: 16px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.location-title {
+
+    font-size: 12px;
+
+    opacity: .6;
+
+    margin-bottom: 5px;
+
+}
+
+
+#location {
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+}
+
+
+.status {
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+
+}
+
+
+.safe {
+
+    background: #173d25;
+
+}
+
+
+.caution {
+
+    background: #554719;
+
+}
+
+
+.danger {
+
+    background: #57241d;
+
+}
+
+
+.extreme {
+
+    background: #651b27;
+
+}
+
+
+.thunderstorm {
+
+    background: #3d2860;
+
+}
+
+
+.error {
+
+    background: #442222;
+
+}
+
+
+.weather-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+}
+
+
+.weather-card {
+
+    background: #202020;
+
+    border-radius: 16px;
+
+    padding: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 90px;
+
+}
+
+
+.weather-card.wide {
+
+    grid-column: span 2;
+
+}
+
+
+.icon {
+
+    font-size: 30px;
+
+}
+
+
+.weather-card span {
+
+    display: block;
+
+    font-size: 12px;
+
+    opacity: .6;
+
+    margin-bottom: 5px;
+
+}
+
+
+.weather-card strong {
+
+    display: block;
+
+    font-size: 18px;
+
+}
+
+
+#checkButton {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    color: #111;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+
+#checkButton:active {
+
+    transform: scale(.98);
+
+}
+
+
+.last-update {
+
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    opacity: .5;
+
+}
+
+
+footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 11px;
+
+    opacity: .4;
+
+    line-height: 1.5;
+
+}
+
+
+@media (max-width: 400px) {
+
+    .weather-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .weather-card.wide {
+
+        grid-column: span 1;
+
+    }
+
+}

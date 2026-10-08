@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#101010"
+    >
+
+    <title>TAS - Tornado Avoidance System</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="app">
+
+        <header>
+
+            <h1>TAS</h1>
+
+            <p>
+                TORNADO AVOIDANCE SYSTEM
+            </p>
+
+        </header>
+
+
+        <section class="location">
+
+            <div class="location-title">
+                📍 LOCATION
+            </div>
+
+            <div id="location">
+                Getting location...
+            </div>
+
+        </section>
+
+
+        <section
+            id="status"
+            class="status safe"
+        >
+
+            CHECKING...
+
+        </section>
+
+
+        <section class="weather-grid">
+
+
+            <div class="weather-card">
+
+                <div class="icon">
+                    🌡️
+                </div>
+
+                <div>
+
+                    <span>
+                        Temperature
+                    </span>
+
+                    <strong id="temperature">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="weather-card">
+
+                <div class="icon">
+                    💨
+                </div>
+
+                <div>
+
+                    <span>
+                        Wind
+                    </span>
+
+                    <strong id="wind">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="weather-card">
+
+                <div class="icon">
+                    🧭
+                </div>
+
+                <div>
+
+                    <span>
+                        Direction
+                    </span>
+
+                    <strong id="direction">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="weather-card">
+
+                <div class="icon">
+                    🧱
+                </div>
+
+                <div>
+
+                    <span>
+                        Pressure
+                    </span>
+
+                    <strong id="pressure">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="weather-card wide">
+
+                <div class="icon">
+                    ☁️
+                </div>
+
+                <div>
+
+                    <span>
+                        Conditions
+                    </span>
+
+                    <strong id="conditions">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <button
+            id="checkButton"
+            onclick="checkWeather()"
+        >
+
+            CHECK NOW
+
+        </button>
+
+
+        <div
+            id="lastUpdate"
+            class="last-update"
+        >
+
+            Last update: --
+
+        </div>
+
+
+        <footer>
+
+            TAS is a weather-monitoring prototype.
+            It is not an official tornado-warning system.
+
+        </footer>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
